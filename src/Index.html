@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    
+    <title>Registration.</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <div class="form-style">
+            <div class="log_in" id="login">
+                <h1>Login</h1>
+                <form action="" method="POST" class="form-showcase">
+                    <label for="username">Username: </label><br />
+                    <input type="text" name="username"required/><br />
+                    <label for="password">Password: </label><br  />
+                    <input type="password" name="password" required/><br />
+                </form>
+                <p>Don't have an account, <span id="view_form" >Register</span></p>
+            </div>
+
+            <div class="regsiter">
+                <h1>Registration</h1>
+                <form action="" method="POST" class="form-showcase">
+                    <label for="Name">Name: </label><br />
+                    <input type="text" name="name" required/><br />
+                    <label for="surname">Surname: </label><br />
+                    <input type="text" name="surname" required/><br />
+                    <label for="username">Create Username: </label><br />
+                    <input type="text" name="username" id = "username" required/><br />
+                    <div id = "invalid"></div>
+                    <label for="new_password">Create Password: </label><br />
+                    <input type="password" name="new_password" id = "new_password" required/><br />
+                    <label for="confirm_password">Confirm Password: </label><br />
+                    <input type="password" name="confirm_password" id ="confirm_password" required/><br />
+                    <span id="invalid_password"></span>
+                    <p>Have an account, <span id="view_form">sign in</span></p>
+                </form>
+            </div>
+        </div>
+        </div>
+        
+        
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
