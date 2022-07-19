@@ -1,5 +1,4 @@
 let elUsername = document.getElementById("username");
-let elButton = document.getElementById("view_form")
 
 function checkLength(minLength){
     let elMsg = document.getElementById("invalid");
@@ -33,5 +32,8 @@ elUsername.addEventListener("blur", () =>{
 elConfirmPassword.addEventListener("blur", passwordConfirm, false);
 
 function toggleView(){
-    return null;
+    let elButton = document.getElementById("view_form")
+    if (elButton.value == "Log in"){
+        
+    }
 }
