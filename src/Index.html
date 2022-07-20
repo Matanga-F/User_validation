@@ -29,18 +29,25 @@
             <div class="regsiter">
                 <h1>Registration</h1>
                 <form action="" method="POST" class="form-showcase">
+
                     <label for="Name">Name: </label><br />
                     <input type="text" name="name" required /><br />
+
                     <label for="surname">Surname: </label><br />
                     <input type="text" name="surname" required/><br />
+
                     <label for="username">Create Username: </label><br />
                     <input type="text" name="username" id = "username" required/><br />
                     <div id = "invalid"></div>
+
                     <label for="new_password">Create Password: </label><br />
                     <input type="password" name="new_password" id = "new_password" required/><br />
+                    <span id="password_length"></span><br />
+
                     <label for="confirm_password">Confirm Password: </label><br />
                     <input type="password" name="confirm_password" id ="confirm_password" required/><br />
                     <span id="invalid_password"></span>
+
                     <p>Have an account, <button id = "view_form" >Log in</button></p>
                 </form>
             </div>

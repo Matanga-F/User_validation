@@ -110,8 +110,14 @@ main{
     padding: 0;
 }
 
+#password_length{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    padding: 0;
+}
 button {
-    
+
     background-color: none;
     overflow:hidden;
     outline: none;
