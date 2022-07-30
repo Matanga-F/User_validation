@@ -11,14 +11,15 @@ function checkLength(minLength){
 //Password Length
 
 let elPasswordLength = document.getElementById("new_password");
+
 function passwordLength(minLength){
 
     let elMsg = document.getElementById("password_length");
 
-    if (elPasswordLength.value >= minLength){
-        elMsg.textContent = "";
+    if (elPasswordLength.value < minLength && elPasswordLength.value != ""){
+        elMsg.textContent = "passward must be "+ minLength + " characters long or more!";
     }else{
-        elMsg.textContent = "passward must be "+ minLength + " charators long or more!";
+        elMsg.textContent = "";
     }
 
 }
@@ -42,9 +43,10 @@ elUsername.addEventListener("blur", () =>{
     checkLength(5);
 }, false);
 
-elPasswordLength.addEventListener("focus", () => {
+elPasswordLength.addEventListener("blur", () => {
     passwordLength(8);
 }, false)
+
 elConfirmPassword.addEventListener("blur", passwordConfirm, false);
 
 function toggleView(){

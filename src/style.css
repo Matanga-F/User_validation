@@ -50,6 +50,8 @@ main{
     background-size: cover;
     height: 450px;
     color: white;
+    position: static;
+    display: flex;
 
 }
 
@@ -73,7 +75,7 @@ main{
     margin-bottom: 1em;
 }
 .form-showcase input, textarea, .username {
-    width: 30%;
+    width: 50%;
     background: none;
     overflow: hidden;
     border: none;
@@ -94,7 +96,19 @@ main{
 .form-showcase input:hover, textarea {
     height: 1.5em;
 }
-
+.log_in{
+    position: absolute;
+    text-align: center;
+    margin-left: 7em;
+    width: 50%;
+}
+.regsiter{
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    margin-left: 7em;
+    width: 50%;
+}
 #invalid{
     transition: all 1s;
     color: red;
@@ -121,4 +135,20 @@ button {
     background-color: none;
     overflow:hidden;
     outline: none;
+}
+
+#checkbox {
+    margin-left: -14em;
+    padding: 0px;
+    position: absolute;
+    background: none;
+    outline: none;
+    display: inline-block;
+
+}
+
+#check{
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
